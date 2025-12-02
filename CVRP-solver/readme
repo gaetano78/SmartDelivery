@@ -1,3 +1,30 @@
+# CVRP Solver with Travel-Time Costs
+
+This repository contains a Python implementation of a Capacitated Vehicle Routing Problem (CVRP) solver where **travel time** is used as the optimization cost instead of Euclidean distance.  
+The code is part of a research activity carried out within a **Marie Skłodowska-Curie Postdoctoral Fellowship (MSCA)** under Horizon Europe.
+
+---
+
+## Overview
+
+- Solves CVRP instances where the cost matrix encodes **travel times** between nodes.
+- Supports **CVRPLIB-style** input format, with an explicit (symmetric) cost matrix.
+- Designed for **algorithm-selection / benchmarking**.
+- Written in Python, intended for **reproducible research** and extension.
+
+---
+
+## Requirements
+
+- Python ≥ 3.9  
+- Typical dependencies:
+  - `ortools`
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `vrplib` (for CVRPLIB parsing)
+
+
 HOW TO USE THE SOLVER
 
 1) launch the script: python CVRP solver - travel times as cost - 14-11-2025 - cleaned.py
