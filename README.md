@@ -7,3 +7,14 @@ At the following link you can find a simple streamlit-based dashboard which is b
 
 https://gaetanoldg-smartdelivery-cvrpsolver.hf.space/
 
+-------------------
+Author: Gaetano Carmelo La Delfa
+
+Role: Marie Skłodowska-Curie Postdoctoral Fellow (MSCA), Computer Engineering / Operations Research
+
+Contact: [gaetano.ladelfa@usal.es]
+
+Issues, questions, or suggestions are welcome.
+
+
+
