@@ -11,6 +11,12 @@ In the CVRP-generator folder you can find a a python script to generate generic,
 
 https://gaetanoldg-cvrp-generator.hf.space/
 
+You can also find also a 10.000 CVRP instances dataset generated with the scripts you find in the repository. The entire dataset is available in the releases, here in the repository, or you can easily download it by cliking the following link:
+
+https://github.com/gaetano78/SmartDelivery/releases/download/T-CVRP_v1.0_dataset_directories/T-CVRP.v1.0_dataset_directories_structure.zip
+
+If you unzip the file, you will have the entire dataset organized in a clean structure with directories and subdirectories. You will also find, for each instance, a file containing useful information and statistics about each instance.
+
 -------------------
 Author: Gaetano Carmelo La Delfa
 
