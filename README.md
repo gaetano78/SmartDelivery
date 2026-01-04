@@ -17,6 +17,12 @@ https://github.com/gaetano78/SmartDelivery/releases/download/T-CVRP_v1.0_dataset
 
 If you unzip the file, you will have the entire dataset organized in a clean structure with directories and subdirectories. You will also find, for each instance, a file containing useful information and statistics about each instance.
 
+In the releases you will also find all the instances (.vrp), with no directories' structure, just a list of files containing the instances. If you prefer, you can easily download it by cliking the following link:
+
+https://github.com/gaetano78/SmartDelivery/releases/download/T-CVRP_V1.0_dataset_no_directories_no_statistics/dataset_no_directories_no_statistics.zip
+
+
+
 -------------------
 Author: Gaetano Carmelo La Delfa
 
