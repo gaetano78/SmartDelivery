@@ -21,6 +21,8 @@ In the releases you will also find all the instances (.vrp), with no directories
 
 https://github.com/gaetano78/SmartDelivery/releases/download/T-CVRP_V1.0_dataset_no_directories_no_statistics/dataset_no_directories_no_statistics.zip
 
+You can also find the dataset on ZENODO: https://zenodo.org/records/18415031
+
 
 
 -------------------
