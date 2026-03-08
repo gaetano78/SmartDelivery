@@ -13,6 +13,7 @@ A simple Streamlit-based dashboard for the generator is also available on Huggin
 https://gaetanoldg-cvrp-generator.hf.space/
 
 The repository also includes a dataset of 10,000 CVRP instances generated with the scripts above. The full dataset is available in the releases section, or can be downloaded directly here:
+
 https://github.com/gaetano78/SmartDelivery/releases/download/T-CVRP_v1.0_dataset_directories/T-CVRP.v1.0_dataset_directories_structure.zip
 
 The archive contains the dataset organized in a clean directory structure, with a statistics file accompanying each instance.
