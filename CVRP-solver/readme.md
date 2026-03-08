@@ -3,7 +3,6 @@
 This folder contains a Python implementation of a **Capacitated Vehicle Routing Problem (CVRP)** solver where **travel time** is used as the optimization cost instead of Euclidean distance.  
 The code is part of a research activity carried out within a **Marie Skłodowska-Curie Postdoctoral Fellowship (MSCA)** under Horizon Europe.
 
----
 
 ## Overview
 
@@ -12,7 +11,6 @@ The code is part of a research activity carried out within a **Marie Skłodowska
 - Designed for **algorithm selection and benchmarking**.
 - Written in Python, intended for **reproducible research** and extension.
 
----
 
 ## Requirements
 
@@ -24,7 +22,6 @@ The code is part of a research activity carried out within a **Marie Skłodowska
   - `matplotlib`
   - `vrplib`
 
----
 
 ## How to Use
 
@@ -71,13 +68,11 @@ For more details on routing options, see the [OR-Tools documentation](https://de
 
 **6. Set a timeout** to limit the solver's running time.
 
----
 
 ## Output
 
 The solver plots the CVRP instance and the found solution, and saves the results to a `.json` file in the same directory.
 
----
 
 ## Input Format
 
