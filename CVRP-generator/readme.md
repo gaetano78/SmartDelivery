@@ -18,6 +18,7 @@ The customer distribution and demand generation logic are based on the work of *
 - **Interactive Dashboard:** Available at https://gaetanoldg-cvrp-generator.hf.space/
 - **Documentation:** A more detailed documentation is available in the [`Instance Generator script - Documentation.pdf`](./Instance%20Generator%20script%20-%20Documentation.pdf) file.
 
+__________________________________
 
 [1] Eduardo Uchoa, Diego Pecin, Artur Pessoa, Marcus Poggi, Thibaut Vidal, Anand Subramanian,
     New benchmark instances for the Capacitated Vehicle Routing Problem,
