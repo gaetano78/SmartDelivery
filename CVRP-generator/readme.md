@@ -16,4 +16,5 @@ The customer distribution and demand generation logic are based on the work of *
     * **Additive Delays:** Fixed time penalties representing intersections or parking, dependent on arc length.
 * **Data Integrity:** Automatically applies the **Floyd-Warshall algorithm** to ensure the triangular inequality holds for the generated travel time matrix.
 * **VRPLIB Compatible:** Exports instances in the standard `.vrp` format (`EDGE_WEIGHT_FORMAT: FULL_MATRIX`).
-* **Interactive Dashboard at: xxxx
+* **Interactive Dashboard at: https://gaetanoldg-cvrp-generator.hf.space/
+* A more detailed documentation in the "Instance Generator script - Documentation.pdf" file.
