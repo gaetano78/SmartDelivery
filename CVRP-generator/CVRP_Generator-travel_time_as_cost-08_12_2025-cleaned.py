@@ -163,7 +163,7 @@ def generate_depot(rootPos, maxCoord):
     #--- 2: position at the center of the grid
     elif rootPos == 2:  # Center
         x_ = y_ = int(maxCoord/2)
-    # Caso 3: position at corner (0,0), upper left => coordinates x_, y_ equal to 0
+    #--- 3: position at corner (0,0), upper left => coordinates x_, y_ equal to 0
     elif rootPos == 3:  # Corner (0,0)
         x_ = y_ = 0
     else:
@@ -239,17 +239,17 @@ def generate_customer_positions(n, custPos, depot, nSeeds, maxCoord, decay):
             while (x_, y_) in S or (x_, y_) == depot:
                 x_ = random.randint(0, maxCoord)
                 y_ = random.randint(0, maxCoord)
-            # inizializzo a 0 il peso
+            # initialize weight to zero
             weight = 0.0
-            # Ciclo su tutte le coppie di coordinate dei seed, e per ogni coppia di coordinate
-            # Sommo le influenze di tutti i semi su (x_, y_). La funzione esponenziale
-            # assegna un peso maggiore ai punti vicini ai semi.
-            #  - Se (x_, y_) è molto vicino a un seme, il suo weight sarà alto.
-            #  - Se (x_, y_) è lontano da tutti i semi, il suo weight sarà basso.
+            # Loop over all pairs of seed coordinates, and for each pair of coordinates
+            # sum the influences of all seeds on (x_, y_). The exponential function
+            # assigns a higher weight to points close to the seeds.
+            #  - If (x_, y_) is very close to a seed, its weight will be high.
+            #  - If (x_, y_) is far from all seeds, its weight will be low.
             for (ip, jp) in seeds:
                 weight += 2**(-distance((x_, y_), (ip, jp))/decay)
-            # Riporto il peso weight in un range tra 0 e 1 usando norm_factor calcolato prima.
-            # Quindi Weight al massimo sarà 1
+            # Normalize the weight into a range between 0 and 1 using the previously calculated norm_factor.
+            # Therefore, Weight will be at most 1.
             weight *= norm_factor
             #------------------------------------------#
             
@@ -291,7 +291,7 @@ def generate_demands(V, demandType, r, n, maxCoord=1000):
             if (x_ < maxCoord/2 and y_ < maxCoord/2) or (x_>=maxCoord/2 and y_>=maxCoord/2):
                 j = int((demandMaxEvenQuadrant - demandMinEvenQuadrant + 1)*random.uniform(0,1) + demandMinEvenQuadrant)
 
-        if demandType == 7:  # Msfl (70-95% small, rest large) – qui usiamo la logica "per i < (n/r)*largePerRoute"
+        if demandType == 7:  # Msfl (70-95% small, rest large) – here we use the logic "for i < (n/r)*largePerRoute"
             if i < (n/r)*largePerRoute:
                 j = int((demandMaxLarge - demandMinLarge +1)*random.uniform(0,1) + demandMinLarge)
             else:
@@ -320,7 +320,7 @@ def compute_capacity(sumDemands, maxDemand, r, n):
 def truncated_exponential_translated(lambda_, cutoff=1.5):
     while True:
         f_x_lambda_sample = random.expovariate(lambda_)
-        if f_x_lambda_sample <= cutoff:  # Tronchiamo a cutoff (1.5)
+        if f_x_lambda_sample <= cutoff:  # cutoff (1.5)
             return 1.0 + f_x_lambda_sample
         # altrimenti rigenero
 
