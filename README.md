@@ -28,7 +28,7 @@ Author: Gaetano Carmelo La Delfa
 
 Role: Marie Skłodowska-Curie Postdoctoral Fellow (MSCA), Computer Engineering / Operations Research
 
-Contact: [gaetano.ladelfa@usal.es]
+Contact: [gaetano.ladelfa@usal.es], [gaetano.ladelfa@unikore.it]
 
 Issues, questions, or suggestions are welcome.
 
