@@ -1,6 +1,6 @@
 # Sixth Sense Simulator
 
-A prototype script for solving the **driver–route assignment problem** using [Google OR-Tools](https://developers.google.com/optimization). Given a pre-computed CVRP solution (a set of routes), the script assigns each route to a driver by maximizing the total *sixth sense* — a familiarity score that captures how well each driver knows the destinations along a route.
+A prototype script for solving the **driver–route assignment problem** using [Google OR-Tools](https://developers.google.com/optimization). Given a pre-computed CVRP solution (a set of routes), the script assigns each route to a driver by maximizing the total *sixth sense* — a familiarity score that captures how well each driver knows the destinations along a route. The solver used is **CBC** (Coin-OR Branch and Cut) through the OR-Tools linear solver wrapper.
 
 ## Overview
 
@@ -10,27 +10,7 @@ The pipeline works in three stages:
 2. **Build a familiarity matrix** φ\_i^d (driver × destination). In this prototype the matrix is generated via simulation; it can be replaced with real-world data (e.g., historical service times).
 3. **Derive the route-level matrix** φ\_p^d (driver × route) by averaging destination-level scores, then **solve an Integer Programming model** that assigns exactly one driver to each route while maximizing total familiarity.
 
-### Mathematical Model
-
-**Decision variables:**
-
-$$x_{d,p} \in \{0, 1\}, \quad \forall \; d \in D, \; p \in P$$
-
-where $x_{d,p} = 1$ if driver $d$ is assigned to route $p$, and $0$ otherwise.
-
-**Objective — maximize total familiarity (sixth sense):**
-
-$$\max \sum_{d \in D} \sum_{p \in P} \varphi_p^d \cdot x_{d,p}$$
-
-**Subject to:**
-
-Each driver is assigned to at most one route:
-
-$$\sum_{p \in P} x_{d,p} \leq 1, \quad \forall \; d \in D$$
-
-Each route is assigned to exactly one driver:
-
-$$\sum_{d \in D} x_{d,p} = 1, \quad \forall \; p \in P$$
+## Requirements
 
 - Python 3.8+
 - [ortools](https://pypi.org/project/ortools/)
