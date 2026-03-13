@@ -1,0 +1,57 @@
+{
+    "instance_name": "LDG30_1265_rain_30_0001",
+    "objective": 4580.47,
+    "total_travel_time": 4580.47,
+    "total_load": 1349,
+    "execution_time": 50.000256061553955,
+    "heuristic": "PARALLEL_CHEAPEST_INSERTION",
+    "metaheuristic": "GUIDED_LOCAL_SEARCH",
+    "routes": {
+        "1": {
+            "route": [
+                0,
+                22,
+                3,
+                21,
+                24,
+                4,
+                13,
+                28,
+                9,
+                2,
+                5,
+                0
+            ],
+            "travel_time": 2173.79,
+            "load": 752
+        },
+        "2": {
+            "route": [
+                0,
+                19,
+                25,
+                29,
+                8,
+                15,
+                11,
+                26,
+                16,
+                10,
+                20,
+                23,
+                7,
+                27,
+                6,
+                18,
+                30,
+                14,
+                12,
+                1,
+                17,
+                0
+            ],
+            "travel_time": 2406.68,
+            "load": 597
+        }
+    }
+}
