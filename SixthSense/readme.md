@@ -87,6 +87,9 @@ The script produces:
 
 This script is part of the **SmartDelivery** research project, which investigates AI/ML-driven approaches to the Capacitated Vehicle Routing Problem (CVRP). The *sixth sense* concept models driver expertise as a quantifiable familiarity score that can be integrated into route-to-driver assignment decisions.
 
-## License
+The script is based on the following paper:
 
-This project is released under the [MIT License](LICENSE).
+> La Delfa, G. C., Prieto, J., Monteleone, S., & Rafique, H. (2026). SmartDelivery: IoT Platform for Last Mile Delivery Optimization with Real-Time Data and ML-Based Algorithm Selection. *Distributed Computing and Artificial Intelligence, 22nd International Conference (DCAI 2025)*, Lille, France. Zenodo. [https://doi.org/10.1007/978-3-032-04160-9_6](https://doi.org/10.1007/978-3-032-04160-9_6)
+
+
+available at: [https://zenodo.org/records/18631923] (preprint) and at: [https://doi.org/10.1007/978-3-032-04160-9_6] 
