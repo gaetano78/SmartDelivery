@@ -12,16 +12,25 @@ The pipeline works in three stages:
 
 ### Mathematical Model
 
-| Component | Formulation |
-|---|---|
-| **Variables** | x\[d, p\] ∈ {0, 1} — 1 if driver *d* is assigned to route *p* |
-| **Objective** | max Σ\_d Σ\_p φ\_p^d · x\[d, p\] |
-| **Constraint 1** | Each driver is assigned to at most one route: Σ\_p x\[d, p\] ≤ 1 ∀ d |
-| **Constraint 2** | Each route is assigned to exactly one driver: Σ\_d x\[d, p\] = 1 ∀ p |
+**Decision variables:**
 
-The solver used is **CBC** (Coin-OR Branch and Cut) through the OR-Tools linear solver wrapper.
+$$x_{d,p} \in \{0, 1\}, \quad \forall \; d \in D, \; p \in P$$
 
-## Requirements
+where $x_{d,p} = 1$ if driver $d$ is assigned to route $p$, and $0$ otherwise.
+
+**Objective — maximize total familiarity (sixth sense):**
+
+$$\max \sum_{d \in D} \sum_{p \in P} \varphi_p^d \cdot x_{d,p}$$
+
+**Subject to:**
+
+Each driver is assigned to at most one route:
+
+$$\sum_{p \in P} x_{d,p} \leq 1, \quad \forall \; d \in D$$
+
+Each route is assigned to exactly one driver:
+
+$$\sum_{d \in D} x_{d,p} = 1, \quad \forall \; p \in P$$
 
 - Python 3.8+
 - [ortools](https://pypi.org/project/ortools/)
