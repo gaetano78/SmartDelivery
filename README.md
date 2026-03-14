@@ -33,7 +33,6 @@ Contact: [gaetano.ladelfa@usal.es], [gaetano.ladelfa@unikore.it]
 Issues, questions, or suggestions are welcome.
 
 -------------------
-This project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101110022. Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA). Neither the European Union nor the granting authority can be held responsible for them. The work was partially supported from PNRR MUR project PE0000013-FAIR (Future Artificial Intelligence Research) .
-
+This project has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Sklodowska-Curie grant agreement No. 101110022. Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA). Neither the European Union nor the granting authority can be held responsible for them. 
 
 
